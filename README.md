@@ -1,3 +1,8 @@
+## Origin
+
+This is a fork of the original [s3committer](https://github.com/rdblue/s3committer) project, which
+incorporates additional bug fixes. See the commit log for details.
+
 ## S3 output committers
 
 This project has Hadoop OutputCommitter implementations for S3.
