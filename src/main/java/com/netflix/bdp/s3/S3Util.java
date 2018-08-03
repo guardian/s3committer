@@ -132,6 +132,9 @@ public class S3Util {
     boolean threw = true;
     try {
       for (PendingUpload commit : new ObjectIterator<PendingUpload>(in)) {
+        if (commit == null) {
+          throw new NullPointerException("Invalid value read from commits file: " + pendingCommitsFile);
+        }
         commits.add(commit);
       }
       threw = false;

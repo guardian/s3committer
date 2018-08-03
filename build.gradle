@@ -18,6 +18,7 @@ buildscript {
   repositories { jcenter() }
   dependencies {
     classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.3'
+    classpath 'com.netflix.nebula:nebula-publishing-plugin:5.1.0'
   }
 }
 
@@ -28,7 +29,7 @@ apply plugin: 'maven' // make pom files for deployment
 apply plugin: 'com.github.johnrengelman.shadow'
 
 group = "com.netflix.bdp.s3"
-version = '0.5.5'
+version = '0.5.5-gu'
 
 repositories {
   mavenCentral()
